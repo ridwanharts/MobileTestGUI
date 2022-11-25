@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orlansoft.mobiletestgui.EditorFileController">
+   <top>
+       <MenuBar minHeight="10.0" minWidth="600.0">
+          <menus>
+              <Menu text="File">
+                 <items>
+                     <MenuItem onAction="#chooseFile" text="Open" />
+                     <MenuItem onAction="#saveFile" text="Save" />
+                     <MenuItem onAction="#closeWindows" text="Close" />
+                 </items>
+              </Menu>
+          </menus>
+       </MenuBar>
+   </top>
+   <center>
+       <AnchorPane minHeight="400.0" minWidth="600.0" BorderPane.alignment="CENTER">
+          <children>
+              <TextArea fx:id="textArea" minHeight="400.0" minWidth="600.0" promptText="Load a text file using the menu" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="12.0" />
+               </font></TextArea>
+          </children>
+       </AnchorPane>
+   </center>
+   <bottom>
+       <HBox>
+           <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" />
+           </padding>
+          <children>
+              <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                 <children>
+                     <Label fx:id="statusMessage" prefWidth="450.0" text="Info" wrapText="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
+                 </children>
+              </HBox>
+              <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS" />
+          </children>
+       </HBox>
+   </bottom>
+</BorderPane>

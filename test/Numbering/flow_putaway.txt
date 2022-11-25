@@ -1,0 +1,62 @@
+##############################
+#Testing MobileNumbering
+#QuickTest.java
+##############################
+#SetTextField("id","value")
+#ClickButton("id")
+#WaitUntilVisible("id")
+#OpenNavDrawer()
+#CloseNavDrawer()
+#ClickNavDrawerMenu("id recyclerview","Text menu")
+#GoHome()
+#GoRecent()
+#GoBack()
+#Enter()
+#Wait()
+##############################
+
+>startTest
+#Atur Server
+WaitUntilVisible("com.orlansoft.numbering:id/et_server")
+SetTextField("com.orlansoft.numbering:id/et_server","http://192.168.1.88:8080")
+ClickButton("com.orlansoft.numbering:id/bt_save")
+
+#Login
+WaitUntilVisible("com.orlansoft.numbering:id/et_username")
+WaitUntilVisible("com.orlansoft.numbering:id/et_username")
+SetTextField("com.orlansoft.numbering:id/et_username","SA")
+SetTextField("com.orlansoft.numbering:id/et_password","Sa123456")
+ClickButton("com.orlansoft.numbering:id/bt_login")
+
+#Process
+OpenNavDrawer()
+ClickNavDrawerMenu("com.orlansoft.numbering:id/material_drawer_recycler_view","Put Away")
+WaitUntilVisible("com.orlansoft.numbering:id/et_recvno")
+SetTextField("com.orlansoft.numbering:id/et_recvno","10517220100001")
+ClickButton("com.orlansoft.numbering:id/et_recvno")
+Enter()
+SetTextField("com.orlansoft.numbering:id/et_manualref","testing")
+ClickButton("com.orlansoft.numbering:id/bt_cont")
+WaitUntilVisible("com.orlansoft.numbering:id/textinput_placeholder")
+SetTextField("com.orlansoft.numbering:id/et_lotid","LOT2022001")
+Enter()
+ClickButton("com.orlansoft.numbering:id/bt_cont")
+WaitUntilVisible("com.orlansoft.numbering:id/et_toloc")
+SetTextField("com.orlansoft.numbering:id/et_toloc","L009R0")
+Enter()
+ClickButton("com.orlansoft.numbering:id/bt_send")
+WaitUntilVisible("com.orlansoft.numbering:id/confirm_button")
+ClickButton("com.orlansoft.numbering:id/confirm_button")
+WaitUntilVisible("com.orlansoft.numbering:id/confirm_button")
+ClickButton("com.orlansoft.numbering:id/confirm_button")
+WaitUntilVisible("com.orlansoft.numbering:id/et_recvno")
+SetTextField("com.orlansoft.numbering:id/et_recvno","10517220100001")
+GoBack()
+OpenNavDrawer()
+ClickNavDrawerMenu("com.orlansoft.numbering:id/material_drawer_recycler_view","Location Transfer")
+OpenNavDrawer()
+CloseNavDrawer()
+OpenNavDrawer()
+CloseNavDrawer()
+
+>endTest

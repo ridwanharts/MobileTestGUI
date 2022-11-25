@@ -1,0 +1,13 @@
+>startSetup
+Set("type","hybrid")
+Set("projectTest","Salesmate")
+Set("fileTest","flow_test.txt|flow_test1.txt|flow_test2.txt")
+Set("deviceName","2c1b9b4a")
+Set("platformName","Android")
+Set("platformVersion","11")
+Set("skipUnlock","false")
+Set("appPackage","com.ionic.odsscm")
+Set("appActivity","com.ionic.odsscm.MainActivity")
+Set("noReset","true")
+Set("autoGrantPermissions","true")
+>endSetup

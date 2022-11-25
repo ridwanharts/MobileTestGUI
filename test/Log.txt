@@ -1,0 +1,33 @@
+2022-05-20 06:28:44:307 [Appium] Welcome to Appium v1.22.3
+2022-05-20 06:28:44:308 [Appium] Non-default server args:
+2022-05-20 06:28:44:308 [Appium]   logFile: /home/orlansoft-web6/1Projects/POS/MobileTestGUI/test/Log.txt
+2022-05-20 06:28:44:320 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2022-05-20 06:28:44:527 [HTTP] --> GET /wd/hub/status
+2022-05-20 06:28:44:528 [HTTP] {}
+2022-05-20 06:28:44:528 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2022-05-20 06:28:44:529 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2022-05-20 06:28:44:532 [HTTP] <-- GET /wd/hub/status 200 4 ms - 68
+2022-05-20 06:28:44:532 [HTTP] 
+2022-05-20 06:28:53:454 [HTTP] Request idempotency key: d6c336d8-6904-49e9-a0d7-96c5cfdaa4f5
+2022-05-20 06:28:53:461 [HTTP] --> POST /wd/hub/session
+2022-05-20 06:28:53:462 [HTTP] {"desiredCapabilities":{"appActivity":"com.ods.loadsheet.activity.ActivityMain","appPackage":"com.ods.loadsheet","noReset":"false","platformVersion":"10","automationName":"UIAutomator2","autoGrantPermissions":"true","skipUnlock":"false","platformName":"Android","deviceName":"2c1b9b4a"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.ods.loadsheet.activity.ActivityMain","appium:appPackage":"com.ods.loadsheet","appium:autoGrantPermissions":"true","appium:automationName":"UIAutomator2","appium:deviceName":"2c1b9b4a","appium:noReset":"false","platformName":"android","appium:platformVersion":"10","appium:skipUnlock":"false"}]}}
+2022-05-20 06:28:53:462 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.ods.loadsheet.activity.ActivityMain","appPackage":"com.ods.loadsheet","noReset":"false","platformVersion":"10","automationName":"UIAutomator2","autoGrantPermissions":"true","skipUnlock":"false","platformName":"Android","deviceName":"2c1b9b4a"},null,{"firstMatch":[{"appium:appActivity":"com.ods.loadsheet.activity.ActivityMain","appium:appPackage":"com.ods.loadsheet","appium:autoGrantPermissions":"true","appium:automationName":"UIAutomator2","appium:deviceName":"2c1b9b4a","appium:noReset":"false","platformName":"android","appium:platformVersion":"10","appium:skipUnlock":"false"}]}]
+2022-05-20 06:28:53:463 [BaseDriver] Event 'newSessionRequested' logged at 1653028133462 (13:28:53 GMT+0700 (Western Indonesia Time))
+2022-05-20 06:28:53:564 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2022-05-20 06:28:53:565 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2022-05-20 06:28:53:566 [BaseDriver] Creating session with W3C capabilities: {
+2022-05-20 06:28:53:566 [BaseDriver]   "alwaysMatch": {
+2022-05-20 06:28:53:566 [BaseDriver]     "platformName": "android",
+2022-05-20 06:28:53:566 [BaseDriver]     "appium:appActivity": "com.ods.loadsheet.activity.ActivityMain",
+2022-05-20 06:28:53:566 [BaseDriver]     "appium:appPackage": "com.ods.loadsheet",
+2022-05-20 06:28:53:566 [BaseDriver]     "appium:autoGrantPermissions": "true",
+2022-05-20 06:28:53:566 [BaseDriver]     "appium:automationName": "UIAutomator2",
+2022-05-20 06:28:53:566 [BaseDriver]     "appium:deviceName": "2c1b9b4a",
+2022-05-20 06:28:53:566 [BaseDriver]     "appium:noReset": "false",
+2022-05-20 06:28:53:566 [BaseDriver]     "appium:platformVersion": "10",
+2022-05-20 06:28:53:566 [BaseDriver]     "appium:skipUnlock": "false"
+2022-05-20 06:28:53:566 [BaseDriver]   },
+2022-05-20 06:28:53:567 [BaseDriver]   "firstMatch": [
+2022-05-20 06:28:53:567 [BaseDriver]     {}
+2022-05-20 06:28:53:567 [BaseDriver]   ]
+2022-05-20 06:28:53:567 [BaseDriver] }

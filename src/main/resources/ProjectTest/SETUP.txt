@@ -1,0 +1,13 @@
+>startSetup
+Set("type","native")
+Set("projectTest","Drivermate")
+Set("fileTest","flow_test.txt,"")
+Set("deviceName","2c1b9b4a")
+Set("platformName","Android")
+Set("platformVersion","11")
+Set("skipUnlock","false")
+Set("appPackage","com.ods.loadsheet")
+Set("appActivity","com.ods.loadsheet.activity.ActivityMain")
+Set("noReset","true")
+Set("autoGrantPermissions","true")
+>endSetup

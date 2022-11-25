@@ -1,0 +1,43 @@
+##############################
+#Testing MobileNumbering
+#QuickTest.java
+##############################
+#SetTextField("id","value")
+#ClickButton("id")
+#ClickButtonByTextView("text")
+#WaitUntilVisible("id")
+#OpenNavDrawer("id")
+#CloseNavDrawer("id")
+#ClickNavDrawerMenu("id recyclerview","Text menu")
+#GoHome()
+#GoRecent()
+#GoBack()
+#WaitElementWitText("element","text")
+#Sleep("millis")
+##############################
+
+>startTest
+#Atur Server
+WaitUntilVisible("com.orlansoft.numbering:id/et_server")
+SetTextField("com.orlansoft.numbering:id/et_server","http://192.168.1.88:8080")
+ClickButton("com.orlansoft.numbering:id/bt_save")
+
+#Login
+WaitUntilVisible("com.orlansoft.numbering:id/et_username")
+WaitUntilVisible("com.orlansoft.numbering:id/et_username")
+SetTextField("com.orlansoft.numbering:id/et_username","SA")
+SetTextField("com.orlansoft.numbering:id/et_password","Sa123456")
+ClickButton("com.orlansoft.numbering:id/bt_login")
+
+#Process
+OpenNavDrawer()
+ClickNavDrawerMenu("com.orlansoft.numbering:id/material_drawer_recycler_view","Put Away")
+OpenNavDrawer()
+ClickNavDrawerMenu("com.orlansoft.numbering:id/material_drawer_recycler_view","Stock Count")
+WaitUntilVisible("com.orlansoft.numbering:id/tb_menu")
+OpenNavDrawer()
+ClickNavDrawerMenu("com.orlansoft.numbering:id/material_drawer_recycler_view","Backup & Restore")
+OpenNavDrawer()
+CloseNavDrawer()
+
+>endTest

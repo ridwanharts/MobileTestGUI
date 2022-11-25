@@ -1,0 +1,24 @@
+##############################
+#Testing Drivermate
+#QuickTest.java
+##############################
+#SetTextField("id","value")
+#ClickButton("id")
+#ClickButtonByTextView("text")
+#ClickButtonByAccessibilityId("text")
+#ClickButtonByXPath("xpath")
+#WaitUntilVisible("id")
+#OpenNavDrawer("id")
+#CloseNavDrawer("id")
+#ClickNavDrawerMenu("id recyclerview","Text menu")
+#GoHome()
+#GoRecent()
+#GoBack()
+#WaitElementWithText("element","text")
+#Sleep("millis")
+##############################
+
+>startTest
+#Atur Server
+
+>endTest

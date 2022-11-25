@@ -1,0 +1,13 @@
+>startSetup
+Set("projectTest","Numbering")
+Set("fileTest","flow_putaway.txt|flow_test.txt")
+Set("deviceName","2c1b9b4a")
+Set("udid","057585317d28")
+Set("platformName","Android")
+Set("platformVersion","9.0")
+Set("skipUnlock","false")
+Set("appPackage","com.orlansoft.numbering")
+Set("appActivity","com.orlansoft.numbering.view.main.MainActivity")
+Set("noReset","false")
+Set("autoGrantPermissions","true")
+>endSetup

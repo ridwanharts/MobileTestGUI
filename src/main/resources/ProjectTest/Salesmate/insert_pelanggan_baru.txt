@@ -1,0 +1,128 @@
+#Salesmate v3.2.05
+#Case   : Insert Pelanggan Baru
+#Device : realme RMX1911 (Android 10)
+#Screen : 720x1600
+#
+#################################################
+
+>startTest
+
+WaitText("Berita Harian")
+Sleep("1500")
+
+ClickIDHybrid("_sideMenu")
+Sleep("1000")
+
+ClickIDHybrid("_kunjungan")
+Sleep("1000")
+
+ClickButtonByAccessibilityId("Pelanggan Baru")
+Sleep("1000")
+
+ClickIDHybrid("btn_insert_pelanggan")
+Sleep("1000")
+
+SetTextIDHybrid("CustName,PT. Testing")
+Sleep("1000")
+
+ClickIDHybrid("take_photo_toko")
+Sleep("2000")
+
+#Take Photo Toko (id button camera disesuaikan dengan aplikasi yang digunakan)	
+WaitUntilVisible("com.oppo.camera:id/shutter_button")
+ClickButton("com.oppo.camera:id/shutter_button")
+WaitUntilVisible("com.oppo.camera:id/done_button")
+ClickButton("com.oppo.camera:id/done_button")
+Sleep("2000")
+
+ScrollByCoorHybrid("644,800,644,100")
+Sleep("1000")
+
+SetTextIDHybrid("Owner_Name,Wans")
+Sleep("1000")
+
+SetTextIDHybrid("DateOfBirth,24-02-1997")
+Sleep("1000")
+
+#Textview ditambah posisi x,y scroll pastikan tidak terbalik
+ScrollTextToCoorHybrid("Pemilik,644,100")
+Sleep("1000")
+
+SetTextIDHybrid("PersonalID,1234567890123456")
+Sleep("1000")
+
+ClickIDHybrid("take_photo_ktp")
+Sleep("2000")
+
+#Take Photo KTP (id button camera disesuaikan dengan aplikasi yang digunakan)	
+WaitUntilVisible("com.oppo.camera:id/shutter_button")
+ClickButton("com.oppo.camera:id/shutter_button")
+WaitUntilVisible("com.oppo.camera:id/done_button")
+ClickButton("com.oppo.camera:id/done_button")
+Sleep("2000")
+
+ScrollByCoorHybrid("644,1000,644,100")
+Sleep("1000")
+
+SetTextIDHybrid("NPWP,123456789012345")
+Sleep("1000")
+
+ClickIDHybrid("take_photo_npwp")
+Sleep("2000")
+
+#Take Photo KTP (id button camera disesuaikan dengan aplikasi yang digunakan)	
+WaitUntilVisible("com.oppo.camera:id/shutter_button")
+ClickButton("com.oppo.camera:id/shutter_button")
+WaitUntilVisible("com.oppo.camera:id/done_button")
+ClickButton("com.oppo.camera:id/done_button")
+Sleep("2000")
+
+ScrollByCoorHybrid("644,1000,644,100")
+Sleep("1000")
+
+ScrollByCoorHybrid("644,1000,644,100")
+Sleep("1000")
+
+SetTextIDHybrid("Phones,081171717171")
+Sleep("1000")
+
+ScrollTextToCoorHybrid("Telepon,644,100")
+Sleep("1000")
+
+SetTextIDHybrid("Address,Jln. Surabaya No 15")
+Sleep("1000")
+
+SetTextIDHybrid("City,Surabaya")
+Sleep("1000")
+
+SetTextIDHybrid("Remarks,Percobaan Testing")
+Sleep("1000")
+
+ClickIDHybrid("take_photo_form")
+Sleep("2000")
+
+#Take Photo KTP (id button camera disesuaikan dengan aplikasi yang digunakan)	
+WaitUntilVisible("com.oppo.camera:id/shutter_button")
+ClickButton("com.oppo.camera:id/shutter_button")
+WaitUntilVisible("com.oppo.camera:id/done_button")
+ClickButton("com.oppo.camera:id/done_button")
+Sleep("2000")
+
+#Scroll ke bawah
+ScrollByCoorHybrid("644,600,644,50")
+Sleep("1000")
+
+#Scroll ke atas
+ScrollByCoorHybrid("644,350,644,950")
+Sleep("1000")
+
+#Scroll ke atas
+ScrollByCoorHybrid("644,350,644,950")
+Sleep("2000")
+
+ClickIDHybrid("_simpan")
+Sleep("1000")
+
+>endTest
+
+

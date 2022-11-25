@@ -1,0 +1,114 @@
+#Salesmate v3.2.05
+#Case   : Kunjungan Pelanggan Tertunda
+#Device : realme RMX1911 (Android 10)
+#Screen : 720x1600
+#
+#################################################
+
+>startTest
+
+WaitText("Berita Harian")
+Sleep("500")
+
+ClickIDHybrid("rvTertunda")
+Sleep("1000")
+
+ClickIDHybrid("_0")
+Sleep("1000")
+
+WaitText("ID")
+Sleep("1500")
+
+ClickIDHybrid("_cameraBarcode")
+Sleep("2000")
+GoBack()
+Sleep("2000")
+
+ClickIDHybrid("_cameraBarcode")
+Sleep("2000")
+ClickIDHybrid("_cameraBarcode")
+Sleep("2000")
+GoBack()
+Sleep("2000")
+
+ClickIDHybrid("_abaikanBarcode")
+Sleep("2000")
+ClickIDHybrid("_abaikanBarcode")
+Sleep("2000")
+
+ClickIDHybrid("_validasiKunjungan")
+Sleep("3000")
+	
+WaitText("Pesanan")
+Sleep("500")
+
+ClickButtonByAccessibilityId("Pesanan")
+Sleep("1000")
+
+#Scroll ke atas (memastikan posisi paling atas)
+ScrollByCoorHybrid("644,350,644,950")
+Sleep("3000")
+
+SetTextIDHybrid("_searchPesanan,bingo")
+Sleep("3000")
+
+#Scroll ke atas (skip loading dan memastikan posisi paling atas)
+ScrollByCoorHybrid("644,350,644,950")
+Sleep("1000")
+
+SetTextIDHybrid("item_0, ")
+Sleep("2000")
+
+SetTextIDHybrid("item_0,21")
+Sleep("2000")
+
+GoBack()
+Sleep("4000")
+
+GoBack()
+Sleep("2000")
+
+#Selesai Kunjungan
+ClickIDHybrid("_selesaiKunjungan")
+Sleep("2000")
+
+ClickIDHybrid("_cameraBarcode")
+Sleep("1000")
+GoBack()
+Sleep("1000")
+
+ClickIDHybrid("_cameraBarcode")
+Sleep("1000")
+ClickIDHybrid("_cameraBarcode")
+Sleep("2000")
+GoBack()
+Sleep("2000")
+
+ClickIDHybrid("_abaikanBarcode")
+Sleep("2000")
+ClickIDHybrid("_abaikanBarcode")
+Sleep("2000")
+
+ClickIDHybrid("_validasiKunjungan")
+Sleep("5000")
+
+WaitText("Pesanan")
+Sleep("500")
+
+#Selesai
+ClickIDHybrid("_selesaiKunjungan")
+Sleep("5000")
+
+#Set delivery date
+SetTextIDHybrid("ExpDate,15-06-2022")
+Sleep("3000")
+
+#Simpan
+ClickIDHybrid("_process")
+Sleep("3000")
+
+WaitText("Peringatan")
+Sleep("500")
+
+ClickIDHybrid("_ok")
+Sleep("5000")
